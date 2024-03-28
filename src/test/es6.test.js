@@ -1,4 +1,5 @@
 import { wait } from "./es6";
+import { test, expect } from "@jest/globals";
 
 test("It resolves with 'abc' value after 1 second", async () => {
   const start = Date.now();
