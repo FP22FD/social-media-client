@@ -1,7 +1,15 @@
 name: Automated E2E Testing
-on: 
+on:
   pull_request:
   workflow_dispatch:
+
+env:
+  ## Sets environment variable
+
+  APP_HOME_URL: ${{secrets.APP_HOME_URL}}
+  DELAY_COMMANDS: ${{secrets.DELAY_COMMANDS}}
+  USER_EMAIL: ${{secrets.USER_EMAIL}}
+  USER_PASSWORD: ${{secrets.USER_PASSWORD}}
 
 jobs:
   run-e2e-tests:
