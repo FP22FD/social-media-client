@@ -35,6 +35,8 @@ Assignment:
 4. Create a Pull Request from workflow branch into the default branch
 5. Create tests to cover some required test cases:
 
+- `3A testing`: Arrange, Act and Assert pattern
+
 - `Unit testing` using `Jest` `Mock` objects for fetch and `Stub` for local storage:
 
   - the login function stores a token when provided with valid credentials, using `@jest-environment node`
