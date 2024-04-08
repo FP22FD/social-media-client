@@ -39,7 +39,7 @@ describe("tests functional of login", () => {
     // cy.login(data.email, data.password);
 
     // act
-    cy.logout(), { delay: 800 };
+    cy.logout();
 
     // assert
     cy.isLoggedOut();
