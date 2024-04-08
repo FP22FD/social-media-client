@@ -36,7 +36,6 @@ describe("tests functional of login", () => {
     // arrange
     cy.showLoginForm();
     cy.loginWithTestuser();
-    // cy.login(data.email, data.password);
 
     // act
     cy.logout();

@@ -80,6 +80,8 @@ Cypress.Commands.add("login", (email, password) => {
 
   // cy.wait(1500);
   cy.wait("@POST-login");
+
+  cy.wait(500);
 });
 
 Cypress.Commands.add("loginWithTestuser", () => {
