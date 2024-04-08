@@ -43,6 +43,8 @@ Assignment:
   - the logout function clears the token from browser storage, using `@jest-environment node`
   - the auth function remove/add the class logged-in if user authenticated or not, `DOM` testing using `@jest-environment jsdom`
 
+  Notes: test files are organized using `Vertical Slices`.
+
 - `End-to-end testing` using `Cypress`:
 
   - The user can log in with the login form with valid credentials
