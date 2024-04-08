@@ -7,7 +7,11 @@ import { jest, describe, it, expect } from "@jest/globals";
 import { login } from "./login.js";
 
 describe("Login", () => {
-  it("should login, save the token and profile in localStorage, and return profile", async () => {
+  afterEach(() => {
+    global.fetch.mockClear();
+  });
+
+  it("should login, save the token and profile in localStorage, and return profile - localStorage mock", async () => {
     // Arrange
     const token = "...token...";
 
